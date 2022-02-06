@@ -60,7 +60,7 @@ body{
 .mu{
     width: 100%;
     height: .2rem;
-    background-color: #fff;
+    background-color: #ddd;
     margin: .5rem 0;
     transition: all .5s;
 }
@@ -90,7 +90,8 @@ section{
     left:0;
     top: 0;
     transform-origin: left;
-    transition: left .5s, transform .6s; 
+    transition: left .5s, transform .6s;
+    margin-bottom:1rem; 
 }
 section.change{
     left: 15vw;
@@ -103,6 +104,16 @@ section.change{
     text-shadow: 1rem 1rem 1rem #000;
     text-align: center;
     letter-spacing: .5rem;
+    text-transform: capitalize;
+    padding-top:5rem;
+}
+.section-heading{
+    font-size: 8rem;
+    color: #ccc;
+    text-shadow: .3rem .3rem .3rem #888;
+    text-align: center;
+    letter-spacing: .5rem;
+    text-transform: capitalize;
 }
 .section-1{
     width: 100%;
@@ -117,6 +128,55 @@ section.change{
 }
 .section-1-img{
     width: 50vw;
+}
+/**section-2**/
+.section-2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section-2-container{
+    display: flex;
+    margin: 0 10rem;
+    justify-content: space-evenly;
+}
+.card-img{
+    width: 40rem;
+    height:25rem;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem #bbb;
+    opacity: .7;
+}
+.cards:hover{
+    opacity: 1;
+}
+.car-price{
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
+.submit{
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: #999;
+    border: transparent;
+    color: #eee;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.submit:hover{
+    background-color: #222;
 }
 
 /**font-family: 'Itim', cursive;*/
