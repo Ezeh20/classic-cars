@@ -104,19 +104,26 @@ section.change{
     text-shadow: 1rem 1rem 1rem #000;
     text-align: center;
     letter-spacing: .5rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding-top:5rem;
 }
 .section-heading{
     font-size: 8rem;
-    color: #ccc;
-    text-shadow: .3rem .3rem .3rem #888;
+    color: #eee;
+    text-shadow: .5rem .5rem .5rem #333;
     text-align: center;
     letter-spacing: .5rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
+}
+.section-heading-others{
+    font-size: 8rem;
+    color: #333;
+    text-shadow: .2rem .2rem .2rem #333;
+    text-align: center;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
 }
 .section-1{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -131,8 +138,6 @@ section.change{
 }
 /**section-2**/
 .section-2{
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -180,8 +185,6 @@ section.change{
 }
 /**section 3**/
 .section-3{
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,5 +203,66 @@ section.change{
     width: 30%;
     margin: 0 2rem;
     border-radius: 1rem;
+}
+.section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.car-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 30rem;
+}
+.img{
+    width: 18rem;
+    height: 12rem;
+    object-fit: cover;
+    position: absolute;
+    bottom: 6rem;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem #444;
+    transform: rotateX(4deg);
+    transform-origin: bottom;
+    transition: all .5s;
+}
+.img:hover{
+    transform: rotateX(0); 
+}
+.shelf{
+    position: relative;
+    width: 60%;
+    height: 3rem;
+    background-color: rgba(0, 0, 255, .5);
+    perspective: 30rem;
+    box-shadow: 1rem 1rem 5rem #555;
+}
+.shelf::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10rem;
+    background-color: rgba(51, 51, 192, 0.2);
+    top: -10rem;
+    transform: rotateX(20deg);
+    transform-origin: bottom;
+}
+.car1{
+    left: 45%;
+}
+.car2{
+    left: 30%;
+}
+.car3{
+    left: 60%;
+}
+/**section 5**/
+.section-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url(/images/bg-2.jpg) no-repeat center;
+    background-size: cover;
 }
 /**font-family: 'Itim', cursive;*/
