@@ -13,7 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    overflow-x: hidden;
+    overflow-X: hidden;
     background-color: #ddd;
 }
 /**general**/
@@ -193,14 +193,13 @@ section.change{
     background-size: cover;
 }
 .video-wrapper{
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .video{
-    width: 30%;
+    width: 40rem;
     margin: 0 2rem;
     border-radius: 1rem;
 }
@@ -214,26 +213,28 @@ section.change{
     justify-content: center;
     align-items: center;
     perspective: 30rem;
+    margin: 10rem 0;
 }
 .img{
-    width: 18rem;
-    height: 12rem;
+    width: 21rem;
+    height: 13rem;
+    object-fit: cover;
     object-fit: cover;
     position: absolute;
     bottom: 6rem;
     border-radius: .5rem;
     box-shadow: .2rem .2rem .2rem #444;
-    transform: rotateX(4deg);
+    transform: translateX(-50%) rotateX(4deg);
     transform-origin: bottom;
     transition: all .5s;
 }
 .img:hover{
-    transform: rotateX(0); 
+    transform: translateX(-50%) rotateX(0);
 }
 .shelf{
     position: relative;
-    width: 60%;
-    height: 3rem;
+    width: 120rem;
+    height: 2rem;
     background-color: rgba(0, 0, 255, .5);
     perspective: 30rem;
     box-shadow: 1rem 1rem 5rem #555;
@@ -249,13 +250,14 @@ section.change{
     transform-origin: bottom;
 }
 .car1{
-    left: 45%;
+    left: 30%;
+    
 }
 .car2{
-    left: 30%;
+    left: 50%;
 }
 .car3{
-    left: 60%;
+    left: 69%;
 }
 /**section 5**/
 .section-5{
@@ -267,8 +269,8 @@ section.change{
     align-items: center;
 }
 .contact-form{
-    width: 40rem;
-    height: 41rem;
+    width: 55rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     background-color: #ccc;
@@ -276,8 +278,8 @@ section.change{
     border-radius: 1.5rem;
 }
 input,textarea{
-    margin: .8rem;
-    padding: .8rem;
+    margin: .9rem;
+    padding: .9rem;
     border: none;
 }
 .send{
@@ -292,9 +294,9 @@ input,textarea{
 }
 textarea{
     min-width:95%;
-    max-width: 95%;
+    max-width: 96%;
     min-height:60%;
-    max-height: 60%;
+    max-height: 65%;
 }
 .send:hover{
     background-color: #222;
@@ -303,4 +305,125 @@ textarea{
     color: #eee;
     font-size: 3rem;
 }
-/**font-family: 'Itim', cursive;*/
+/**Responsiveness**/
+@media(max-width:1600px){
+    .section-heading-origin{
+        font-size: 8rem;
+    }
+    .section-heading-others{
+        font-size:6rem;
+        padding: 3rem 0;
+    }
+    .section-1{
+        justify-content: space-evenly;
+    }
+    .section-1-img{
+        width: 60vw;
+    }
+    .section-2{
+        height: auto;
+    }
+    .section-2-container{
+        flex-wrap: wrap;
+    }
+    .cards{
+        margin: 5rem;
+    }
+    .navbar.change{
+        width: 20vw;
+    }
+}
+@media(max-width:1500px){
+    .img{
+        width: 16%;
+    }
+    .section-heading{
+        font-size: 6rem;
+    }
+    .shelf{
+        width: 110rem;
+    }
+    .video{
+        width: 35rem;
+    }
+}
+@media(max-width:1300px){
+    .navbar.change{
+        width: 25vw;
+    }
+    .video{
+        width: 32rem;
+    }
+    .shelf{
+        width: 100rem;
+    }
+    .section-heading{
+        font-size: 5rem;
+    }
+    .section-heading-origin{
+        font-size: 7rem;
+    }
+    .section-heading-others{
+        font-size:5rem;
+        padding: 3rem 0;
+    }
+    .img{
+        width: 19rem;
+        height: 11rem;
+    }
+    .car1{
+        left: 25%;
+        
+    }
+    .car2{
+        left: 50%;
+    }
+    .car3{
+        left: 75%;
+    }
+}
+@media(max-width:1100px){
+    .navbar.change{
+        width: 30vw;
+    }
+    .video{
+        width: 25rem;
+    }
+    .shelf{
+        width: 85rem;
+       }
+}
+@media(max-width:850px){
+    .shelf{
+        width: 80rem;
+       }
+       .video{
+        width: 22rem;
+    } 
+}
+@media(max-width:800px){
+    html{
+        font-size: 55%;
+    }
+    .video{
+        width: 23rem;
+    } 
+    .section-1-img{
+        width: 80vw;
+    }
+}
+@media(max-width:720px){
+    .shelf{
+        width: 70rem;
+       }
+       .img{
+        width: 17rem;
+        height: 10rem;
+    }
+    .contact-form{
+        width: 40rem;
+        height: 45rem;
+    }
+}
+
+
