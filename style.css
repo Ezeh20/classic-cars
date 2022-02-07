@@ -10,6 +10,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -91,7 +92,6 @@ section{
     top: 0;
     transform-origin: left;
     transition: left .5s, transform .6s;
-    margin-bottom:1rem; 
 }
 section.change{
     left: 15vw;
@@ -264,5 +264,43 @@ section.change{
     justify-content: space-around;
     background: url(/images/bg-2.jpg) no-repeat center;
     background-size: cover;
+    align-items: center;
+}
+.contact-form{
+    width: 40rem;
+    height: 41rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+}
+input,textarea{
+    margin: .8rem;
+    padding: .8rem;
+    border: none;
+}
+.send{
+    background-color: #888;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: 700;
+}
+textarea{
+    min-width:95%;
+    max-width: 95%;
+    min-height:60%;
+    max-height: 60%;
+}
+.send:hover{
+    background-color: #222;
+}
+.copyright{
+    color: #eee;
+    font-size: 3rem;
 }
 /**font-family: 'Itim', cursive;*/
