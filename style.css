@@ -76,7 +76,7 @@ body{
     opacity: 0;
 }
 .menu.change{
-    left: 32rem;
+    left: 16vw;
     transform: rotate(45deg);
 }
 .wrapper{
@@ -92,6 +92,7 @@ section{
     top: 0;
     transform-origin: left;
     transition: left .5s, transform .6s;
+    z-index: 50;
 }
 section.change{
     left: 15vw;
@@ -195,7 +196,7 @@ section.change{
 .video-wrapper{
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .video{
@@ -295,7 +296,7 @@ input,textarea{
 textarea{
     min-width:95%;
     max-width: 96%;
-    min-height:60%;
+    min-height:65%;
     max-height: 65%;
 }
 .send:hover{
@@ -346,10 +347,19 @@ textarea{
     .video{
         width: 35rem;
     }
+    .menu.change{
+        left: 21vw;
+    }
 }
 @media(max-width:1300px){
     .navbar.change{
         width: 25vw;
+    }
+    section.change{
+        left: 25vw;
+    }
+    .menu.change{
+        left: 25vw;
     }
     .video{
         width: 32rem;
@@ -392,6 +402,9 @@ textarea{
     .shelf{
         width: 85rem;
        }
+       .menu.change{
+        left: 31vw;
+    }
 }
 @media(max-width:850px){
     .shelf{
@@ -422,8 +435,98 @@ textarea{
     }
     .contact-form{
         width: 40rem;
-        height: 45rem;
+        height: 55rem;
+    }
+    .video{
+        width: 25rem;
+    }
+    .video-wrapper{
+        flex-wrap: wrap; 
+}
+.section-3{
+    height: auto;
+    padding: 5rem 0;
+}
+.video{
+    margin: 1rem;
+  }
+  .section-heading{
+    font-size: 4rem;
+}
+.section-heading-origin{
+    font-size: 6rem;
+}
+.section-heading-others{
+    font-size:4rem;
+    padding: 3rem 0;
+}
+}
+@media(max-width:640px){
+    .shelf{
+        width: 65rem;
+       }
+       .img{
+        width: 15rem;
+        height: 11rem;
+    }
+    .navbar.change{
+        width: 30vw;
+    }
+    section.change{
+        left: 25vw;
+        transform: rotateY(20deg);
+    }
+    .nav-link{
+        font-size: 2rem;
     }
 }
-
-
+@media(max-width:595px){
+    .video{
+        width: 35rem;
+    }
+    .shelf{
+        width: 60rem;
+       }
+       .img{
+        width: 15rem;
+        height: 10rem;
+    }
+    .navbar.change{
+        width: 35vw;
+    }
+    .menu.change{
+        left: 35vw;
+    }
+    section.change{
+        left: 0;
+        transform: rotateY(0);
+    }
+    .section-1-img{
+        width: 90%;
+    }
+}
+@media(max-width:550px){
+    html{
+        font-size: 46%;
+    }
+    .img{
+        width: 13rem;
+        height: 9rem;
+    }
+    .section-1-img{
+        width: 90%;
+    }
+    .shelf{
+        width: 55rem;
+       }
+}
+@media(max-width:450px){
+    .section-1-img{
+        width: 90%;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 40%;
+    }
+}
